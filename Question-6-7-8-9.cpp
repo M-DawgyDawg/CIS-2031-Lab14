@@ -1,43 +1,40 @@
 #include <iostream>
+#include <sstream>
 #include <string>
-#include <sstream> 
-using std::string;
 using std::cout;
 using std::endl;
-
+using std::string;
 
 class Player {
-    private:
-        string name;
-        int hitPoints;
+   private:
+    string name;
+    int hitPoints;
 
-    public:
-        Player (string n, int h){
-            name = n;
-            hitPoints = h;
-        }
-        
+   public:
+    Player(string n, int h) {
+        name = n;
+        hitPoints = h;
+    }
 
-        string getName(){
-            return name;
-        }
+    string getName() {
+        return name;
+    }
 
-        int getHitPoints(){
-            return hitPoints;
-        }
+    int getHitPoints() {
+        return hitPoints;
+    }
 
-        void damage(int points){
-            if ( points > hitPoints )
-                hitPoints = 0;
-            else
-                hitPoints = hitPoints - points;
-        }
+    void damage(int points) {
+        if (points > hitPoints)
+            hitPoints = 0;
+        else
+            hitPoints = hitPoints - points;
+    }
 };
 
-int main(){
+int main() {
     Player a = Player("PoopyPants", 420);
     a.damage(22);
     cout << a.getName() << endl;
     cout << a.getHitPoints() << endl;
-
 }
