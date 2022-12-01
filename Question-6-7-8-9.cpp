@@ -37,8 +37,7 @@ class Player {
 int main(){
     Player a = Player("PoopyPants", 420);
     a.damage(22);
-    cout << getName() << endl;
-    cout << getHitPoints() << endl;
-
+    cout << a.getName() << endl;
+    cout << a.getHitPoints() << endl;
 
 }
