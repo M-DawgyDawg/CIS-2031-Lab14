@@ -19,12 +19,12 @@ int main(){
     printTheString(myString);
 
     //❓❓ QUESTION 3:
-    return 0; // 🡰 delete this line for question 3
+    // 🡰 delete this line for question 3
     myString.append(" C++ Class!");
     printTheString(myString);
 
     //❓❓ QUESTION 4:
-    return 0; // 🡰 delete this line for question 4
+    // 🡰 delete this line for question 4
     myString.replace(6, string::npos, "World.");
     printTheString(myString);
 }
